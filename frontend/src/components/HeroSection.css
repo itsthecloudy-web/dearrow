@@ -1,0 +1,137 @@
+.hero-section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 7.6923% 100px;
+  background: var(--bg-primary);
+  position: relative;
+  margin-top: 80px;
+}
+
+.hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero-badge {
+  display: inline-flex;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 32px;
+  backdrop-filter: blur(12px);
+}
+
+.badge-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  margin-bottom: 32px;
+  max-width: 900px;
+}
+
+.hero-description {
+  margin-bottom: 48px;
+  max-width: 700px;
+  color: var(--text-secondary);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.hero-cta {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 255, 209, 0.5);
+  }
+}
+
+.hero-stats {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding-top: 60px;
+  border-top: 1px solid var(--border-subtle);
+  max-width: 800px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--brand-primary);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border-subtle);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 120px 20px 60px;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .hero-description br {
+    display: none;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+}

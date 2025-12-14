@@ -1,0 +1,26 @@
+.landing-page {
+  background: var(--bg-primary);
+  min-height: 100vh;
+  position: relative;
+}
+
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 1px, transparent 7.6923%),
+    repeating-linear-gradient(-90deg, #fff, #fff 1px, transparent 1px, transparent 7.6923%);
+  background-size: 100% 100%;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.landing-page main {
+  position: relative;
+  z-index: 1;
+}

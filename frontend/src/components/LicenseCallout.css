@@ -1,0 +1,129 @@
+.license-section {
+  padding: 160px 7.6923%;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.license-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.license-card {
+  background: var(--bg-secondary);
+  border: 2px solid var(--brand-primary);
+  padding: 80px;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(12px);
+}
+
+.license-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--brand-primary);
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.license-title {
+  margin-bottom: 24px;
+}
+
+.license-description {
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+}
+
+.license-key-box {
+  display: flex;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  align-items: stretch;
+}
+
+.license-key-display {
+  flex: 1;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.license-key-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--brand-primary);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+}
+
+.copy-button {
+  background: var(--brand-primary);
+  color: #000000;
+  border: none;
+  padding: 20px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.copy-button:hover {
+  background: var(--brand-active);
+  transform: scale(1.02);
+}
+
+.copy-button:active {
+  transform: scale(0.98);
+}
+
+.license-note {
+  background: rgba(0, 255, 209, 0.1);
+  border: 1px solid var(--brand-primary);
+  padding: 24px;
+  text-align: left;
+}
+
+.license-note p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .license-section {
+    padding: 80px 20px;
+  }
+
+  .license-card {
+    padding: 40px 24px;
+  }
+
+  .license-description br {
+    display: none;
+  }
+
+  .license-key-box {
+    flex-direction: column;
+  }
+
+  .license-key-text {
+    font-size: 20px;
+  }
+
+  .copy-button {
+    width: 100%;
+  }
+}
